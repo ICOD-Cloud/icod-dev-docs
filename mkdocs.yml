@@ -1,0 +1,58 @@
+site_name: ICOD.Cloud Developer Documentation
+site_description: Официальная документация для разработчиков и администаротов ICOD.Cloud
+copyright: 2020 ICOD.Cloud
+site_author: ICOD.Cloud
+site_url: http://doc.icod.cloud
+dev_addr: localhost:8000
+
+repo_name: GitHub
+repo_url: https://github.com/ICOD-Cloud/icod-dev-docs
+
+theme: 
+    name: 'material'
+    include_search_page: false
+    search_index_only: true
+    language: 'ru'
+    feature:
+        tabs: true
+    palette:
+        primary: 'indigo'
+        accent: 'deeppurple'
+    favicon: ''
+    logo:
+        icon: "\uE86D"
+
+extra:
+  search:
+    language: 'ru, en'
+
+markdown_extensions:
+    - footnotes:
+    - codehilite:
+        linenums: true
+    - admonition
+    - pymdownx.mark
+    - pymdownx.inlinehilite
+    - pymdownx.highlight
+
+nav:
+- Администратор: 
+  - 'О Документации': 'admin/index.md'
+- Разработчик:
+  - Приветствие: 'developer/index.md'
+  - Backend:
+    - Описание: 'developer/backend/index.md'
+    - 'Быстрый Старт':
+        - Установка: 'developer/backend/install.md'
+        - Модуль: 'developer/backend/module.md'
+        - Метод API: 'developer/backend/apiendpoint.md'
+    - ACL: 'developer/backend/acl.md'
+    - События: 'developer/backend/events.md'
+    - CLI: 'developer/backend/cli.md'
+    - JSON: 'developer/backend/json.md'
+  - Frontend:
+    - 'О Документации': 'developer/frontend/index.md'
+  - PRT:
+    - 'О Документации': 'index3.md'
+  - Docs:
+    - 'О Документации': 'index4.md'
